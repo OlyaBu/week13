@@ -61,3 +61,24 @@ function division() {
 
     document.getElementById('out').innerHTML = result;
 }
+
+function getNums() {
+    let num1, num2;
+    num1 = document.getElementById("num1").value;
+    num1 = parseInt(num1);
+  
+    num2 = document.getElementById("num2").value;
+    num2 = parseInt(num2);
+  
+    return {
+      num1,
+      num2,
+    };
+  }
+  
+  function plus() {
+    const nums = getNums();
+    const result = nums.num1 + nums.num2;
+  
+    document.getElementById("out").innerHTML = result;
+  }
