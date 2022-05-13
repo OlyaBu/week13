@@ -8,7 +8,7 @@ const answer = document.getElementById('out');
 function plus() {
     const num1 = getvalue('num1');
     const num2 = getvalue('num2');
-    result = num1 + num2;
+     const result = num1 + num2;
     answer.innerHTML = result;
 }
 
